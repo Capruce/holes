@@ -238,3 +238,11 @@ class TestMod:
 
     def test_lambda_mod_lambda(self) -> None:
         assert ((_ % 2) % (_ % 2))(3) == 0
+
+
+class TestOther:
+    def test_as_lambda_to_map(self) -> None:
+        assert list(map(_ * 2, [1, 2, 3])) == [2, 4, 6]
+
+        double = _ * 2
+        assert [double(n) for n in [1, 2, 3]] == [2, 4, 6]

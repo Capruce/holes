@@ -1,6 +1,6 @@
-from abc import ABC, abstractmethod
 import operator
-from typing import TYPE_CHECKING, Callable, ClassVar, TypeAlias, Union
+from abc import ABC, abstractmethod
+from typing import Callable, ClassVar, TYPE_CHECKING, TypeAlias, Union
 
 if TYPE_CHECKING:
     from .holes import Hole

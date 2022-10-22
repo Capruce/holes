@@ -1,27 +1,26 @@
 from abc import ABC, abstractmethod
 from collections.abc import Callable, Sequence
-from functools import cache
-from typing import Literal, TypeAlias, Union, overload
+from typing import Literal, overload, TypeAlias, Union
 
 from .expressions import (
-    EQ,
-    GE,
-    GT,
-    LE,
-    LT,
-    NE,
     Abs,
     Add,
     And,
     BinOp,
     Constant,
+    EQ,
     Expression,
     FloorDiv,
+    GE,
+    GT,
     Inv,
+    LE,
     LShift,
+    LT,
     MatMul,
     Mod,
     Mul,
+    NE,
     Neg,
     Or,
     Pos,
