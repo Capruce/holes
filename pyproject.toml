@@ -62,4 +62,5 @@ warn_unused_configs = true
 addopts = [
   "--strict-config",
   "--strict-markers",
+  "-rP",
 ]

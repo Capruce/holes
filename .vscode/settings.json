@@ -2,4 +2,6 @@
     "editor.formatOnSave": true,
     "python.languageServer": "Pylance",
     "python.formatting.provider": "black",
+    "python.testing.pytestEnabled": true,
+    "python.analysis.typeCheckingMode": "basic",
 }

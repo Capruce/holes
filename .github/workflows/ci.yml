@@ -1,11 +1,19 @@
 name: 'CI/CD'
 
 on:
-  pull_request:
-    types: [opened, reopened, synchronize]
   push:
     branches:
       - main
+  pull_request:
+    types: 
+      - opened
+      - reopened 
+      - synchronize
+    paths-ignore:
+      - .gitignore
+      - LICENSE
+      - '**/*.md'
+
 
 env:
   pythonVersion: "3.10"
