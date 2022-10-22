@@ -24,15 +24,6 @@ classifiers = [
 dependencies = []
 
 
-[project.optional-dependencies]
-test = [
-    "pytest ~= 7.1",
-    "mypy   == 0.982",
-    "flake8 ~= 5.0",
-    "black  ~= 22.10",
-    "isort  ~= 5.10",
-]
-
 [tool.black]
 line-length = 88
 target_version = ['py310']
@@ -54,15 +45,18 @@ exclude = '''
 )
 '''
 
+
 [tool.isort]
 profile = "black"
 known_third_party = []
+
 
 [tool.mypy]
 show_error_codes = true
 strict = true
 warn_unused_ignores = true
 warn_unused_configs = true
+
 
 [tool.pytest.ini_options]
 addopts = [

@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import TypeAlias, TYPE_CHECKING
+from typing import TYPE_CHECKING, TypeAlias
 
 if TYPE_CHECKING:
     from .holes import Hole
